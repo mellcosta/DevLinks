@@ -6,3 +6,26 @@ body * {
     font-family: "Inter", sans-serif;
     color: #FFFFFF;
 }
+
+#container{
+    width: 360px;
+    margin: 56px auto 0 auto;
+    border: 1px solid red;
+    padding: 0 24px;
+}
+
+/* Profile */
+#profile{
+    border: 1px solid blue;
+    text-align: center;
+    margin: 24px 0;
+}
+
+#profile img {
+    width: 112px;
+}
+
+#profile p{
+    font-weight: 500;
+    margin: 8px 0 0 0 ;
+}
