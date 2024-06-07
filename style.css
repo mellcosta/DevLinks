@@ -61,6 +61,7 @@ body * {
 .dark #switch button{
     right: 0;
     left: initial;
+    animation: slide-in o.25 forwards;
 }
 
 /* Switch */
@@ -83,6 +84,8 @@ body * {
     left: 0;
     transform: translateY(-50%);
     cursor: pointer;
+
+    animation: slide-back o.25;
 }
 
 #switch button:hover{
@@ -167,7 +170,7 @@ footer{
     font-size: 14px;
 }
 
-/* Responsividadecom media queries */
+/* Responsividade - media queries */
 
 @media (min-width:700px){
     :root{
@@ -175,5 +178,25 @@ footer{
     }
     .dark{
         --bg-url: url(./assets/bg-desktop.jpg) no-repeat top center / cover;
+    }
+}
+
+/* Animation - keyframes */
+
+@keyframes slide-in{
+    from{
+        left:0;
+    }
+    to{
+        leflt:50%;
+    }
+}
+
+@keyframes slide-back{
+    from{
+        left:50%;
+    }
+    to{
+        leflt:0;
     }
 }
