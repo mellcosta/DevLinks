@@ -100,3 +100,9 @@ body * {
 #social-links a:hover{
     background: var(--highlight-color);
 }
+
+footer{
+    text-align: center;
+    padding: 24px 0;
+    font-size: 14px;
+}
