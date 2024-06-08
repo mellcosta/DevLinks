@@ -59,8 +59,8 @@ body * {
 }
 
 .dark #switch button{
-    right: 0;
-    left: initial;
+    left: 0;
+    rigth: initial;
     animation: slide-in o.25 forwards;
 }
 
@@ -81,7 +81,7 @@ body * {
     position: absolute;
     z-index: 1;
     top: 50%;
-    left: 0;
+    right: 0;
     transform: translateY(-50%);
     cursor: pointer;
 
@@ -185,18 +185,18 @@ footer{
 
 @keyframes slide-in{
     from{
-        left:0;
+        right:0;
     }
     to{
-        leflt:50%;
+        right:50%;
     }
 }
 
 @keyframes slide-back{
     from{
-        left:50%;
+        right:50%;
     }
     to{
-        leflt:0;
+        right:0;
     }
 }
