@@ -4,7 +4,7 @@ function toggleMode(){
 
     const img = document.querySelector('#profile img')
     if(html.classList.contains('dark')){
-        img.setAttribute("src", "./assets/avatar.png")
+        img.setAttribute("src", "./assets/avatar-dark.png")
     }
     else{
         img.setAttribute("src", "./assets/avatar-light.png")

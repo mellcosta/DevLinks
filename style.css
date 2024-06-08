@@ -12,6 +12,7 @@
     --surface-color-hover:  rgba(0, 0, 0, 0.02);
     --highlight-color:  rgba(0, 0, 0, 0.1);
     --switch-bg-url: url(./assets/sun.svg);
+    --profile-img: url(./assets/avatar-light.png) no-repeat top center / cover;
 }
 
 .dark{
@@ -22,6 +23,7 @@
     --surface-color-hover:  rgba(0, 0, 0, 0.02);
     --highlight-color:  rgba(255, 255, 255, 0.2);
     --switch-bg-url: url(./assets/moon-stars.svg);
+    --profile-img: url(./assets/avatar-dark.png) no-repeat top center / cover;
 }
 
 body{
@@ -43,24 +45,29 @@ body * {
 
 /* Profile */
 #profile{
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
     margin: 24px 0;
 }
 
-#profile img {
+#profile #img{
     width: 112px;
+    height: 112px;
     border: 1px solid var(--text-color);
-    border-radius: 100%;
+    border-radius: 50%;
+    background: var(--profile-img);
 }
 
 #profile p{
     font-weight: 500;
-    margin-top: 8px ;
 }
 
 .dark #switch button{
     left: 0;
-    rigth: initial;
+    right: initial;
     animation: slide-in o.25 forwards;
 }
 
